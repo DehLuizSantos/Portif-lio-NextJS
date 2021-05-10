@@ -9,6 +9,15 @@ export default createGlobalStyle`
 
   body{
     color: ${props => props.theme.colors.primary};
-    font:400 16px Roboto, Sans-serif;
+    font-family: 400 16px "Fira Code", Sans-serif;
   }
+
+  h1{
+    text-align: center;
+    color: ${props => props.theme.colors.secundary};
+    font-family: 'Fira Code', monospace;       
+  }
+
 `;
+
+
