@@ -6,11 +6,21 @@ export const ContainerFooter = styled.div `
 
     background:${props => props.theme.colors.background};
 
-    h2{
-        display: flex;
-        align-content:center;
-        text-align:center;
+    font-size: 50px;
+
+    color:#fff;
+
+    display: flex;
+    justify-content:space-between;
+    padding:20px 10px 0 5px;   
+
+    a{
+        color:${props => props.theme.colors.secundary};
+        
     }
 
+    a:hover{
+        color: ${props => props.theme.colors.primary};
+    }    
 
 `;

@@ -2,7 +2,11 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 
 import { ContainerProjects, ContainerCard, AlignUfos } from './styles'
 
+import { GiAlienStare } from 'react-icons/gi'
+
 import Ufo from '../../assets/ufo.svg'
+
+import { AlignDivider, Divider } from '../../styles/styled-divider'
 
  
 function Projects(){
@@ -54,7 +58,14 @@ function Projects(){
                 </Row>
             </Container>
 
+            <AlignDivider>
+                <GiAlienStare />
+                <Divider />
+
+            </AlignDivider>
+
         </ContainerProjects>
+        
     )
 }
 

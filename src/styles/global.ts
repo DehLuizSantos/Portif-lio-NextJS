@@ -10,6 +10,7 @@ export default createGlobalStyle`
   body{
     color: ${props => props.theme.colors.primary};
     font-family: 400 16px "Fira Code", Sans-serif;
+    background:${props => props.theme.colors.background};
   }
 
   h1{
@@ -19,5 +20,8 @@ export default createGlobalStyle`
   }
 
 `;
+
+
+
 
 

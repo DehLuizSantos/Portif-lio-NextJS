@@ -1,6 +1,9 @@
 import { ContainerAbout, AlignAlien, TextDiv } from "./styles"
 import {Container, Row,Col} from 'react-bootstrap'
 
+import  { Divider, AlignDivider}  from '../../styles/styled-divider'
+import { FaRedditAlien } from 'react-icons/fa'
+
 import Alien from '../../assets/laurent_little_green_alien.svg'
 
 function About(){
@@ -38,7 +41,13 @@ function About(){
               </TextDiv>
             </Col>
           </Row>
+          
       </Container>
+
+      <AlignDivider>
+        <FaRedditAlien />
+        <Divider />
+      </AlignDivider>
 
     </ContainerAbout>
   )

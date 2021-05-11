@@ -11,6 +11,8 @@ export const ContainerHeader = styled.div`
   align-items:center;
   flex-direction:column;
 
+  font-size:50px;
+
 
 
 
@@ -19,6 +21,7 @@ export const ContainerHeader = styled.div`
     color: ${props => props.theme.colors.primary};
     margin-top:40px;
     font-family: 'Fira Code', monospace;
+    
 
     span{
     color: #fff;
@@ -27,6 +30,7 @@ export const ContainerHeader = styled.div`
   }
   p{
     margin-top: 30px;
+    margin-bottom:100px;
     font-size: 50px;
     color:${props => props.theme.colors.secundary};
     }
@@ -34,3 +38,4 @@ export const ContainerHeader = styled.div`
 
 
 `;
+

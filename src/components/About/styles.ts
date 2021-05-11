@@ -19,6 +19,7 @@ export const TextDiv = styled.div`
   height:580px;
   width: 530px;
   border-radius: 30px;
+  border: 2px solid #fff;
   margin-top:30px;
 
   background: ${props => props.theme.colors.black};
@@ -41,5 +42,7 @@ export const TextDiv = styled.div`
   }
 
 
-`
+`;
+
+
 
