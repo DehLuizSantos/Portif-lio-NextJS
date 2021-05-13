@@ -1,30 +1,66 @@
 import styled from 'styled-components'
 
 export const ContainerProjects = styled.div`
-    width:100%;
+    width:75rem;
     height: 120vh;
     background: ${props => props.theme.colors.background};
    
     
 
+    
+    .mainrow {
+        .item-portfolio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
 `;
 
 
 export const ContainerCard = styled.div`
-    width:350px;
-    height: 250px;
-    padding:30px;
+    width:22rem;
+    height: 16rem;
+    padding:2rem;
     border-radius:20px;
     border: 2px solid #fff;
-    margin-top:30px;   
-
+    margin-top:2rem;   
     background: ${props => props.theme.colors.black};
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
 `;
 
-export const AlignUfos = styled.div`
-    width:200px;
-    height: 150px;
+
+
+export const AlignButton = styled.div`
+    width:12.5rem;
+    height: 9.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:2rem;
+   
+    background-color:${props => props.theme.colors.background};
+
+    a{
+        text-decoration:none;
+
+        border: 2px solid #fff;
+        border-radius:1rem;
+        padding:0.5rem;
+
+        color:${props => props.theme.colors.primary};
+
+        &:hover{
+            background-color:#fff;
+        }
+    }
+
+    
 
 `;
 

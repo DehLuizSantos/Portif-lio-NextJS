@@ -7,7 +7,7 @@ function Footer(){
         <ContainerFooter>
             <h2>Desenvolvido por: André Luiz Santos</h2>
 
-            <a href="">
+            <a href="#home">
                 <AiFillRocket />
             </a>
 

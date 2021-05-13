@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card } from 'react-bootstrap'
 
-import { ContainerProjects, ContainerCard, AlignUfos } from './styles'
+import { ContainerProjects, ContainerCard, AlignButton } from './styles'
 
 import { GiAlienStare } from 'react-icons/gi'
 
@@ -11,48 +11,59 @@ import { AlignDivider, Divider } from '../../styles/styled-divider'
  
 function Projects(){
     return(
-        <ContainerProjects>
+        <ContainerProjects id="projetos">
+            
             <h1>Últimos Projetos</h1>
 
             <Container>
-                <Row>
-                    <Col>
+                <Row className='mainrow'>
+                    <Col className='item-portfolio' md={4} xs={6}>
                        <ContainerCard>
-                           <AlignUfos>
-                               <Ufo />
-                           </AlignUfos>
+                           <AlignButton>
+                               <a href="">teste</a>
+                           </AlignButton>
                        </ContainerCard>                                        
                     </Col>
 
-                    <Col>
+                    <Col className='item-portfolio' md={4} xs={6}>
                         <ContainerCard>
-                            teste
+                            <AlignButton>
+                                <a href="">teste</a>
+                           </AlignButton>
                         </ContainerCard>
                     </Col>
 
-                    <Col>
+                    <Col className='item-portfolio' md={4} xs={6}>
                         <ContainerCard>
-                            <Ufo />
+                            <AlignButton>                               
+                                <a href="">teste</a>                               
+                           </AlignButton>
                         </ContainerCard>
                     </Col>
-                </Row>
-
-                <Row>
-                    <Col>
+                
+                    <Col className='item-portfolio' md={4} xs={6}>
                        <ContainerCard>
-                           teste
+                            <ContainerCard>
+                            <AlignButton>                               
+                                <a href="">teste</a>                               
+                           </AlignButton>
+                        </ContainerCard>
                        </ContainerCard>                                        
                     </Col>
 
-                    <Col>
+                    <Col className='item-portfolio' md={4} xs={6}>
                         <ContainerCard>
-                            <Ufo />
+                            <AlignButton>
+                               <a href="">teste </a>
+                           </AlignButton>                           
                         </ContainerCard>
                     </Col>
 
-                    <Col>
+                    <Col className='item-portfolio' md={4} xs={6}>
                         <ContainerCard>
-                            teste
+                            <AlignButton>
+                                <a href="">teste</a>
+                           </AlignButton>
                         </ContainerCard>
                     </Col>
                 </Row>
@@ -61,7 +72,6 @@ function Projects(){
             <AlignDivider>
                 <GiAlienStare />
                 <Divider />
-
             </AlignDivider>
 
         </ContainerProjects>

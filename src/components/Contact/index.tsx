@@ -1,7 +1,6 @@
 import { 
     ContainerContact,
     ContainerBio,
-    ContainerBioAlign,
     Perfil,
     RedesSociais,
     Historia } from './styles'
@@ -22,14 +21,15 @@ import { FaRocket } from 'react-icons/fa';
 function Contact(){
     return(
         
-        <ContainerContact>
+        <ContainerContact id="contato">
+
             <h1>Contato</h1>
 
-            <ContainerBioAlign>
+           
                 <ContainerBio>
                     <Container>
                         <Row>
-                            <Col>
+                            <Col className="col-md-6">
                                 <Perfil>
                                     <img src={PerfilFoto} width="350px" />
                                 </Perfil>                         
@@ -61,8 +61,10 @@ function Contact(){
                                     </a>
                                 </RedesSociais>
                             </Col>
+                        
+                        
 
-                            <Col>
+                            <Col className="col-md-6">
                                 <Historia>
                                     <p>
                                         Meu primeiro contato com a <span>programação</span> ocorreu
@@ -83,7 +85,7 @@ function Contact(){
                         
                     </Container>
                 </ContainerBio>
-            </ContainerBioAlign>   
+            
         </ContainerContact>
     )
 }

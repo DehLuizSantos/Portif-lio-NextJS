@@ -8,21 +8,21 @@ import Alien from '../../assets/laurent_little_green_alien.svg'
 
 function About(){
   return(
-    <ContainerAbout>
+    <ContainerAbout id="sobre">
 
 
         <h1>Sobre</h1>
 
 
       <Container fluid>
-          <Row>
-            <Col>
+          <Row >
+            <Col xs={6}>
             <AlignAlien>
               <Alien />
             </AlignAlien>
             </Col>
 
-            <Col>
+            <Col xs={6}>
               <TextDiv>
                   <h2>"sobre"</h2> <span> = </span> <span>&#123;</span> 
                   <p>"nome" <span>:</span> "André Luiz Santos"</p>

@@ -1,57 +1,53 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerNavbar = styled.div`
     position: fixed;
-    left:0;
-    top:0;
+    top: 0;
+    width: 80rem;
+    height: 6rem;
+    font-family: 'Fira Code', sans-serif;
+    background-color: rgba(0,0,0,.26);
+    margin-bottom: 0px;
+    
+    .nav-tabs {
+        border-bottom: 0px !important;
+    }
+    
+`;
 
+export const ExpandNav = styled.div`
+    height: 6rem;
+    width: 75rem;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    
+    background-color: rgba(0,0,0,.26);
+`
 
-    padding: 0 1rem;
+export const MenuFormater = styled.div`
+    color: ${props => props.theme.colors.black};
+    display: flex;
+    flex-direction: row;
+    .nav-link {
+        color: #fff;
+    }
+    .nav-link:active {
+        border-bottom:${props => props.theme.colors.secundary};
+    }
+`
 
-    width:100%;
-    height:75px;
-    background: ${props => props.theme.colors.black};
-
-`;
-
-export const MenuDrop = styled.button`
-  background: ${props => props.theme.colors.black};
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .active{
+export const NavItem = styled.span`
+    
+    transition: all.3s;
     display:flex;
-
-  }
-
-  .inactive{
-    display:none;
-
-
-  }
-
-`;
-
-export const ContainerMenu = styled.div`
-  width:200px;
-  height:400px;
-
-  background-color:transparent;
-
-  position: absolute;
-  top:10%;
-  right:10%;
-
-
-
-
-
-
-
+    flex-direction:end;
+    
+    &:hover{
+        .nav-link{
+            color: ${props => props.theme.colors.primary};
+            border-bottom: .1px solid ${props => props.theme.colors.black} !important;
+            border: 0px;
+        }
+            transform: translateY(-1px);
+    }
 `;
