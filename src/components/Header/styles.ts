@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerHeader = styled.div`
   width: 75rem;
-  height: 100vh;
+  height: 100vh;  
 
   background-color: ${props => props.theme.colors.background};
 
@@ -10,12 +10,13 @@ export const ContainerHeader = styled.div`
   justify-content: center;
   align-items:center;
   flex-direction:column;
-  font-size: 2rem;
+
+  font-size: 2rem; //divider
+ 
 
   h2{
     font-size: 5rem;
-    color: ${props => props.theme.colors.primary};
-    margin-top: 9rem;
+    color: ${props => props.theme.colors.primary};    
     font-family: 'Fira Code', monospace;
     
 
@@ -26,8 +27,7 @@ export const ContainerHeader = styled.div`
 
   }
   p{
-    margin-top: 2rem;
-    margin-bottom:10rem;
+    padding:2rem;    
     font-size: 3rem;
     color:${props => props.theme.colors.secundary};
     }
@@ -56,6 +56,8 @@ export const ContainerHeader = styled.div`
   }
   }
   @media (min-width: 512px){
+   
+  
     h2{
         font-size: 2.5rem;   
     }

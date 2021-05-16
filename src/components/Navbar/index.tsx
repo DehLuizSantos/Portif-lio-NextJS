@@ -1,65 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import { ContainerNavbar, ExpandNav, MenuFormater, NavItem } from './styles';
+import {ContainerNavbar} from './styles'
 
-import {
-    Container,
-    Col,
-    Row,
-    Nav,
-    NavbarBrand,
-    NavLink
-} from 'react-bootstrap';
+import {Dropdown} from 'react-bootstrap';
 
-import { GiUfo } from 'react-icons/gi'
+import {GiUfo} from 'react-icons/gi'
 
-const NavBar: React.FC = () => {
 
-    const [dropdownOpen, setDropdownOpen] = useState(false);
 
-    const toggle = () => setDropdownOpen(!dropdownOpen);
+const Navbar = () =>{
     
-
     return (
         <ContainerNavbar>
-          
-            <Nav>
-                <ExpandNav>
-                    <Container>
-                        <Row>
-                            <Col md="6">
-                                <Row>
-                                    <NavbarBrand>
-                                        < GiUfo />
-                                    </NavbarBrand>
-                                </Row>
-                            </Col>
-                            <Col md="6">
-                                <Row>
-                                    <MenuFormater>
-                                        <NavItem>
-                                            <NavLink href="#home">Home</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="#sobre">Sobre</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="#projetos">Projetos</NavLink>
-                                        </NavItem>
-                                        <NavItem>
-                                            <NavLink href="#contato">Contato</NavLink>
-                                        </NavItem>
-                                    </MenuFormater>
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Container>
-                </ExpandNav>
-            </Nav>
-        
+            <Dropdown>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    <GiUfo />
+                </Dropdown.Toggle>
 
+                <Dropdown.Menu>
+                    <Dropdown.Item href="#home">Home</Dropdown.Item>
+                    <Dropdown.Item href="#sobre">Sobre</Dropdown.Item>
+                    <Dropdown.Item href="#projetos">Projetos</Dropdown.Item>
+                    <Dropdown.Item href="#contato">Contato</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
         </ContainerNavbar>
-    );
+    )
 }
 
-export default NavBar;
+export default Navbar

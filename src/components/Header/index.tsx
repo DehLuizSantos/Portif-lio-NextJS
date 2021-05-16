@@ -14,10 +14,8 @@ function Header(){
 
 
         <RiAliensFill /> 
-          <Divider />
-                
+          <Divider />              
              
-
     </ContainerHeader>
     
   )

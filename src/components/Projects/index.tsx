@@ -42,12 +42,10 @@ function Projects(){
                     </Col>
                 
                     <Col className='item-portfolio' md={4} xs={6}>
-                       <ContainerCard>
-                            <ContainerCard>
+                       <ContainerCard>                            
                             <AlignButton>                               
                                 <a href="">teste</a>                               
-                           </AlignButton>
-                        </ContainerCard>
+                           </AlignButton>                        
                        </ContainerCard>                                        
                     </Col>
 
@@ -69,10 +67,7 @@ function Projects(){
                 </Row>
             </Container>
 
-            <AlignDivider>
-                <GiAlienStare />
-                <Divider />
-            </AlignDivider>
+            
 
         </ContainerProjects>
         

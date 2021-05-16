@@ -29,7 +29,7 @@ function Contact(){
                 <ContainerBio>
                     <Container>
                         <Row>
-                            <Col className="col-md-6">
+                            <Col className="col-md-6 xs-6">
                                 <Perfil>
                                     <img src={PerfilFoto} width="350px" />
                                 </Perfil>                         
@@ -64,7 +64,7 @@ function Contact(){
                         
                         
 
-                            <Col className="col-md-6">
+                            <Col className="col-md-6 xs-6">
                                 <Historia>
                                     <p>
                                         Meu primeiro contato com a <span>programação</span> ocorreu

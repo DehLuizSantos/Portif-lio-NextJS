@@ -1,4 +1,4 @@
-import { ContainerAbout, AlignAlien, TextDiv } from "./styles"
+import { ContainerAbout, TextDiv } from "./styles"
 import {Container, Row,Col} from 'react-bootstrap'
 
 import  { Divider, AlignDivider}  from '../../styles/styled-divider'
@@ -13,16 +13,11 @@ function About(){
 
         <h1>Sobre</h1>
 
-
       <Container fluid>
-          <Row >
-            <Col xs={6}>
-            <AlignAlien>
-              <Alien />
-            </AlignAlien>
-            </Col>
+          <Row>
+            
 
-            <Col xs={6}>
+            <Col  xs={12} className="d-flex justify-content-center align-content-center">
               <TextDiv>
                   <h2>"sobre"</h2> <span> = </span> <span>&#123;</span> 
                   <p>"nome" <span>:</span> "André Luiz Santos"</p>
@@ -31,7 +26,8 @@ function About(){
                   <p><span>&#125;</span></p>
 
                   <h2>"formação"</h2><span> = </span> <span>&#123;</span>
-                  <p><span>&#91;</span> "Superior Completo", "técnico em informatica" <span>&#93;</span></p>
+                  <p><span>&#91;</span> "superior completo", "técnico em informatica", 
+                  "pôs graduação em desenvolvimento web" <span>&#93;</span></p>
                   <p><span>&#125;</span></p>
 
                   <h2>"stack" </h2><span>=</span> <span>&#123;</span>
@@ -39,15 +35,18 @@ function About(){
                   "HTML", "CSS", "SCSS"<span>&#93;</span></p>
                   <p><span>&#125;</span></p>
               </TextDiv>
-            </Col>
-          </Row>
-          
-      </Container>
 
-      <AlignDivider>
-        <FaRedditAlien />
-        <Divider />
-      </AlignDivider>
+              
+            </Col>        
+          
+          </Row>
+
+          <AlignDivider>
+            <FaRedditAlien />
+            <Divider />
+          </AlignDivider>
+          
+      </Container>      
 
     </ContainerAbout>
   )

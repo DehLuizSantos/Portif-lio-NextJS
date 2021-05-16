@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerProjects = styled.div`
     width:75rem;
-    height: 120vh;
+    height: 100vh;
     background: ${props => props.theme.colors.background};
    
     

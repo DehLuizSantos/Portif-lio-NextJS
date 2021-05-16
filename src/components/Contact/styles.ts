@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerContact = styled.div`
     width: 75rem;
-    height:130vh;
+    height:100vh;
     background-color: ${props => props.theme.colors.background};
     padding:3.125rem;
     display:flex;
@@ -16,11 +16,9 @@ export const ContainerContact = styled.div`
     
 `;
 
-
-
 export const ContainerBio = styled.div`
     width: 62.5rem;
-    height:37.5rem;
+    height:30.5rem;
     background-color: ${props => props.theme.colors.black};
     border-radius:3.125rem;    
     border: 2px solid #fff;
@@ -34,18 +32,19 @@ export const ContainerBio = styled.div`
 `;
 
 export const Perfil = styled.div`
-    width:22rem;
+    width:15rem;
     height: 15rem;
-    border-radius:12.5rem;
+    border-radius:15rem;
     margin:1.25rem;   
+    background-color:red;
 
     position:absolute;
-    bottom:10;
-   
+    bottom:8rem;
+    left:5rem;
 
     img{
-        width: 21rem;
-        height:21rem;
+        width: 15rem;
+        height:15rem;
         border-radius:12.5rem;
         border: 2px solid #fff;
         
@@ -64,7 +63,7 @@ export const RedesSociais = styled.div`
     align-items:center;
 
     position:absolute;
-    top:25rem;
+    top:22rem;
     
 
     background-color: ${props => props.theme.colors.background};
@@ -78,23 +77,20 @@ export const RedesSociais = styled.div`
     }
     a:hover{
         color: ${props => props.theme.colors.primary};
-    }
-
-
-    
+    }  
 
 
 `
 
 export const Historia = styled.div`
-    width:28rem;
-    height:32rem;
+    width:23rem;
+    height:22rem;
     border-radius: 50px;
     border: 2px solid #fff;
-    margin-top:2rem;
+    
 
     background-color: ${props => props.theme.colors.background};
-    padding:2rem;
+    padding:1.5rem;
 
     text-align:center;
 
@@ -102,9 +98,6 @@ export const Historia = styled.div`
     justify-content:center;
     
     p{
-        padding:1.87rem;
-        margin:1.87rem;
-
         color: #fff;
     }
 

@@ -2,73 +2,73 @@ import styled from 'styled-components'
 
 export const ContainerAbout = styled.div`
   width:75rem;
-  height: 120vh;
+  height: 100vh;
   
 
   background:${props => props.theme.colors.background};
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+  @media (max-width: 1080px){    
+    
+  }
+    
+  @media (max-width: 720px){
+    
+    
+  }
+  
+  @media (max-width: 512px){
+    
+    
+  }
  
 `;
 
-export const AlignAlien = styled.div`
-  width: 30rem;
-  margin-top: 2rem; 
-  
 
-  @media (max-width: 1080px){
-    width:35rem;
-    
-    
-  @media (max-width: 720px){
-    width:30rem;
-  }
-  }
-  @media (max-width: 512px){
-    width:28rem;
-    
-  }
-`
 
 export const TextDiv = styled.div`
-  height:36rem;
-  width: 31rem;
+  height:32rem;
+  width: 50rem;
   border-radius: 30px;
   border: 2px solid #fff;
   margin-top:1.8rem;
 
   background: ${props => props.theme.colors.black};
-  padding: 1.8rem; 
+  padding: 2rem; 
 
-  @media (max-width: 1080px){
-    width:36rem;
-    height:31rem;
-  }
-    
-  @media (max-width: 720px){
-    width:28rem;
-    height:28rem;
-  }
-  
-  @media (max-width: 512px){
-    width:28rem;
-    height:30rem;
-  }
-  
   h2{
     display:inline;
     font-family: 'Fira Code', monospace;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    color:#fff;
   }
 
   p{
-    margin-left:1.5rem;
+    margin-left:2rem;
   }
 
   span{
     color: ${props => props.theme.colors.secundary};
     font-family: 'Fira Code', monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
+  @media (max-width: 1080px){    
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+    
+  @media (max-width: 720px){
+    
+  }
+  @media (max-width: 512px){
+    
+  }
+  
 
 `;
 

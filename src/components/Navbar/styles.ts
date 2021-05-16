@@ -8,46 +8,39 @@ export const ContainerNavbar = styled.div`
     font-family: 'Fira Code', sans-serif;
     background-color: rgba(0,0,0,.26);
     margin-bottom: 0px;
-    
-    .nav-tabs {
-        border-bottom: 0px !important;
-    }
-    
-`;
-
-export const ExpandNav = styled.div`
-    height: 6rem;
-    width: 75rem;
-    display: flex;
-    align-items: center;
-    
-    background-color: rgba(0,0,0,.26);
-`
-
-export const MenuFormater = styled.div`
-    color: ${props => props.theme.colors.black};
-    display: flex;
-    flex-direction: row;
-    .nav-link {
-        color: #fff;
-    }
-    .nav-link:active {
-        border-bottom:${props => props.theme.colors.secundary};
-    }
-`
-
-export const NavItem = styled.span`
-    
-    transition: all.3s;
     display:flex;
-    flex-direction:end;
+    justify-content:end;
     
-    &:hover{
-        .nav-link{
-            color: ${props => props.theme.colors.primary};
-            border-bottom: .1px solid ${props => props.theme.colors.black} !important;
-            border: 0px;
+    .dropdown{
+        display:flex;
+        justify-content:end;
+        background:transparent;
+        
+
+        .dropdown-menu{
+                background-color:transparent;
+                border:none;
+                
+            }
+
+        a.dropdown-item{
+            color:#fff;
+
+            :hover{
+                background:${props => props.theme.colors.primary};
+                color:#000000;
+            }
+            
         }
-            transform: translateY(-1px);
+
+        button{
+            font-size:2rem;
+            background:transparent;
+            border:none;
+
+           
+        }
+
     }
+    
 `;
