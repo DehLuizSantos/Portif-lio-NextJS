@@ -25,6 +25,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <Contact />
         <Footer />
 
+      
+
     </ThemeProvider>
   )
 }

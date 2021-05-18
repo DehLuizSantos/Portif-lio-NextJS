@@ -4,7 +4,7 @@ import {Container, Row,Col} from 'react-bootstrap'
 import  { Divider, AlignDivider}  from '../../styles/styled-divider'
 import { FaRedditAlien } from 'react-icons/fa'
 
-import Alien from '../../assets/laurent_little_green_alien.svg'
+
 
 function About(){
   return(
@@ -14,8 +14,7 @@ function About(){
         <h1>Sobre</h1>
 
       <Container fluid>
-          <Row>
-            
+          <Row>            
 
             <Col  xs={12} className="d-flex justify-content-center align-content-center">
               <TextDiv>
@@ -34,9 +33,7 @@ function About(){
                   <p><span>&#91;</span>"react", "nextJS", "typeScript","javaScript", 
                   "HTML", "CSS", "SCSS"<span>&#93;</span></p>
                   <p><span>&#125;</span></p>
-              </TextDiv>
-
-              
+              </TextDiv>              
             </Col>        
           
           </Row>

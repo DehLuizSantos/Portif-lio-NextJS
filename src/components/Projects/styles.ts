@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
 export const ContainerProjects = styled.div`
-    width:75rem;
-    height: 100vh;
+    width:100rem;
+    min-height: 140vh;
+
+    padding:5rem;    
     background: ${props => props.theme.colors.background};
    
-    
-
+    h1{
+        font-size:5rem;
+    }
     
     .mainrow {
         .item-portfolio {
@@ -15,7 +18,6 @@ export const ContainerProjects = styled.div`
             align-items: center;
         }
     }
-
 `;
 
 
@@ -27,11 +29,9 @@ export const ContainerCard = styled.div`
     border: 2px solid #fff;
     margin-top:2rem;   
     background: ${props => props.theme.colors.black};
-
     display:flex;
     align-items:center;
     justify-content:center;
-
 `;
 
 
@@ -45,25 +45,17 @@ export const AlignButton = styled.div`
     border-radius:2rem;
    
     background-color:${props => props.theme.colors.background};
-
     a{
         text-decoration:none;
-
         border: 2px solid #fff;
         border-radius:1rem;
         padding:0.5rem;
-
         color:${props => props.theme.colors.primary};
-
         &:hover{
             background-color:#fff;
         }
     }
-
     
-
 `;
-
-
 
 

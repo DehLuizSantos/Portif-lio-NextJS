@@ -1,6 +1,6 @@
 import { ContainerHeader } from "./styles";
 
-import { Divider } from '../../styles/styled-divider'
+import { AlignDivider, Divider } from '../../styles/styled-divider'
 
 
 import { RiAliensFill } from 'react-icons/ri';
@@ -12,10 +12,11 @@ function Header(){
         <h2><span>&lt;</span> André Luiz Santos <span> /&gt;</span></h2>
         <p>Desenvolvedor Front-end de outro mundo</p>
 
-
+      <AlignDivider>
         <RiAliensFill /> 
           <Divider />              
-             
+      </AlignDivider>   
+          
     </ContainerHeader>
     
   )

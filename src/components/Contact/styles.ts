@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const ContainerContact = styled.div`
-    width: 75rem;
-    height:100vh;
+    width: 100rem;
+    height:120vh;
     background-color: ${props => props.theme.colors.background};
     padding:3.125rem;
     display:flex;
@@ -11,18 +11,25 @@ export const ContainerContact = styled.div`
     justify-content: center;
     align-items: center;
 
-    margin-top:3.125rem;
+    
+
+    h1{
+        font-size:5rem;
+    }
 
     
 `;
 
 export const ContainerBio = styled.div`
-    width: 62.5rem;
-    height:30.5rem;
-    background-color: ${props => props.theme.colors.black};
-    border-radius:3.125rem;    
-    border: 2px solid #fff;
+    width: 75rem;
+    height:40rem;
     margin: 1rem;
+
+    background-color: ${props => props.theme.colors.black};
+    border-radius:4rem;    
+    border: 2px solid #fff;
+
+    
     position:relative;
 
     display:flex;
@@ -32,19 +39,19 @@ export const ContainerBio = styled.div`
 `;
 
 export const Perfil = styled.div`
-    width:15rem;
-    height: 15rem;
+    width:20rem;
+    height: 20rem;
     border-radius:15rem;
     margin:1.25rem;   
     background-color:red;
 
     position:absolute;
-    bottom:8rem;
+    bottom:15rem;
     left:5rem;
 
     img{
-        width: 15rem;
-        height:15rem;
+        width: 20rem;
+        height:20rem;
         border-radius:12.5rem;
         border: 2px solid #fff;
         

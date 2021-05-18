@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ContainerHeader = styled.div`
-  width: 75rem;
-  height: 100vh;  
+  width: 100rem;
+  height: 120vh;  
 
   background-color: ${props => props.theme.colors.background};
 
@@ -11,7 +11,7 @@ export const ContainerHeader = styled.div`
   align-items:center;
   flex-direction:column;
 
-  font-size: 2rem; //divider
+  font-size: 2rem; 
  
 
   h2{
@@ -22,7 +22,7 @@ export const ContainerHeader = styled.div`
 
     span{
     color: #fff;
-    font-size:3rem;
+    font-size:2rem;
     }
 
   }
@@ -32,7 +32,9 @@ export const ContainerHeader = styled.div`
     color:${props => props.theme.colors.secundary};
     }
 
-  @media (min-width: 1080px){
+  @media (max-width: 1080px){
+    height:250vh;
+    
     h2{
         font-size: 4.5rem;
     }
@@ -44,6 +46,8 @@ export const ContainerHeader = styled.div`
     }
     
   @media (min-width: 720px){
+    height:200vh;
+    
     h2{
         font-size: 4rem; 
     }
@@ -55,18 +59,23 @@ export const ContainerHeader = styled.div`
     }
   }
   }
-  @media (min-width: 512px){
-   
+  @media (max-width: 512px){
+    
+    height:400vh;
+    
   
     h2{
-        font-size: 2.5rem;   
+        font-size: 4.5rem;   
+      
+      span{
+      font-size:4rem;
+    }
     }
     p{
-      font-size: 2rem;
+      font-size: 4rem;
+      text-align:center;
     }
-    span{
-      font-size:2rem;
-    }
+    
   }
 
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerFooter = styled.div `
-    width:75rem;
+    width:100rem;
     height:4rem;
 
     background:${props => props.theme.colors.background};

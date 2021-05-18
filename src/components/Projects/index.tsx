@@ -1,15 +1,15 @@
-import { Container, Row, Col, Card } from 'react-bootstrap'
-
 import { ContainerProjects, ContainerCard, AlignButton } from './styles'
 
-import { GiAlienStare } from 'react-icons/gi'
+import { Container, Col, Row } from 'react-bootstrap';
 
-import Ufo from '../../assets/ufo.svg'
+import { RiAliensFill } from 'react-icons/ri';
 
 import { AlignDivider, Divider } from '../../styles/styled-divider'
 
  
 function Projects(){
+
+
     return(
         <ContainerProjects id="projetos">
             
@@ -65,9 +65,14 @@ function Projects(){
                         </ContainerCard>
                     </Col>
                 </Row>
+                
             </Container>
+            <AlignDivider>
+                <RiAliensFill /> 
+                <Divider />                
+            </AlignDivider>
 
-            
+
 
         </ContainerProjects>
         

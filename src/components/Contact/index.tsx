@@ -6,7 +6,8 @@ import {
     Historia } from './styles'
 
 import { Container, Row, Col } from 'react-bootstrap';
-import PerfilFoto from '../../assets/26166329_1581167325298368_406977316196417473_n.jpg'
+
+
 
 import { 
     AiFillGithub,
@@ -31,7 +32,7 @@ function Contact(){
                         <Row>
                             <Col className="col-md-6 xs-6">
                                 <Perfil>
-                                    <img src={PerfilFoto} width="350px" />
+                                    <img src='../../assets/perfil.jpg' />
                                 </Perfil>                         
 
                             
